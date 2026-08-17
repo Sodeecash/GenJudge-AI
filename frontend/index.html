@@ -4,12 +4,56 @@
     <title>GenJudge AI</title>
 </head>
 <body>
-    <h1>GenJudge AI</h1>
-    <p>AI-powered dispute resolution using GenLayer.</p>
 
-    <textarea placeholder="Describe your dispute"></textarea>
+    <h1>GenJudge AI</h1>
+
+    <h2>Submit a Dispute</h2>
+
+    <label>Claimant Evidence:</label>
+    <br>
+    <textarea id="claimant" rows="5" cols="40"></textarea>
+
     <br><br>
-    <button>Submit</button>
+
+    <label>Respondent Evidence:</label>
+    <br>
+    <textarea id="respondent" rows="5" cols="40"></textarea>
+
+    <br><br>
+
+    <button onclick="resolveDispute()">
+        Submit Dispute
+    </button>
+
+    <h2>Result</h2>
+
+    <div id="result">
+        No dispute submitted yet.
+    </div>
+
+    <script>
+        function resolveDispute() {
+
+            let claimant =
+                document.getElementById("claimant").value;
+
+            let respondent =
+                document.getElementById("respondent").value;
+
+            if(claimant.length > respondent.length){
+                document.getElementById("result").innerHTML =
+                    "<b>Winner:</b> Claimant<br>" +
+                    "<b>Confidence:</b> 80%<br>" +
+                    "<b>Reason:</b> More evidence provided.";
+            }
+            else{
+                document.getElementById("result").innerHTML =
+                    "<b>Winner:</b> Respondent<br>" +
+                    "<b>Confidence:</b> 75%<br>" +
+                    "<b>Reason:</b> Stronger response submitted.";
+            }
+        }
+    </script>
+
 </body>
 </html>
- 
