@@ -1,0 +1,11 @@
+GenJudge-AI/
+├── README.md
+├── contracts/
+│   └── dispute_contract.py
+├── frontend/
+│   ├── index.html
+│   ├── app.js
+│   └── style.css
+├── docs/
+│   └── architecture.md
+└── screenshots/
