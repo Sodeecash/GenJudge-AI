@@ -13,6 +13,7 @@ class DisputeContract:
         self.disputes[dispute_id]["status"] = "resolved"
         self.disputes[dispute_id]["winner"] = winner
         self.disputes[dispute_id]["reason"] = reason
+
         return {
     "winner": winner,
     "confidence": 82,
