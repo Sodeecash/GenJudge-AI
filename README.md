@@ -51,3 +51,22 @@ screenshots/ – Project screenshots
 Status
 
 Prototype under active development.
+
+Demo Workflow
+
+1. User submits claimant evidence.
+2. User submits respondent evidence.
+3. The Intelligent Contract evaluates both submissions.
+4. A decision is generated.
+5. Results display:
+   - Winner
+   - Confidence Score
+   - Reasoning
+
+Example Output:
+
+Winner: Claimant
+
+Confidence: 82%
+
+Reason: Claimant provided stronger supporting evidence.
