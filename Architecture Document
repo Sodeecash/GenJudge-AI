@@ -1,0 +1,25 @@
+GenJudge AI Architecture
+
+Components
+
+Frontend
+
+Web interface where users submit disputes and evidence.
+
+Backend
+
+Handles requests and communicates with GenLayer.
+
+Intelligent Contract
+
+Evaluates submitted information and returns a decision.
+
+Workflow
+
+1. User submits dispute.
+2. Opposing party submits response.
+3. Intelligent Contract evaluates evidence.
+4. Decision is returned.
+5. Results are displayed to users.
+
+GenLayer is central to the application's core decision-making workflow.
